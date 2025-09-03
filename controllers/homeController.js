@@ -14,8 +14,18 @@ export const index = async (req, res, next) => {
         const productsLifestyle = await Product.find({
             tags: { $in:tagLifestyle.map(t => funcTools.getTagID(tags,t)) }
         }).limit(3);
-        res.locals.productsMotor = productsMotor;
-        res.locals.productsLifestyle = productsLifestyle;
+        res.locals.productsMotor = productsMotor.map(p => {
+            if(!p.image.startsWith('http')){
+                return {...p,image:`products/${p.image}`}
+            }
+            return p
+        });
+        res.locals.productsLifestyle = productsLifestyle.map(p => {
+            if(!p.image.startsWith('http')){
+                return {...p,image:`products/${p.image}`}
+            }
+            return p
+        });
         res.render('home');    
     } catch (error) {
         next(error)

@@ -392,12 +392,6 @@
   .min-w-\[50vw\] {
     min-width: 50vw;
   }
-  .min-w-\[60vw\] {
-    min-width: 60vw;
-  }
-  .min-w-\[80vw\] {
-    min-width: 80vw;
-  }
   .flex-1 {
     flex: 1;
   }
@@ -510,9 +504,6 @@
   }
   .bg-black {
     background-color: var(--color-black);
-  }
-  .bg-emerald-300 {
-    background-color: var(--color-emerald-300);
   }
   .bg-emerald-400 {
     background-color: var(--color-emerald-400);
