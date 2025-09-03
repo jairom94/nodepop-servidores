@@ -5,8 +5,10 @@ import app from './app.js';
 
 const server = http.createServer(app);
 
+const port = process.env.PORT || 3000;
+
 server.on('listening',()=>{
-    console.log('Server on http:localhost:3000')
+    console.log(`Server on http:localhost:${port}`);
 });
 
-server.listen(3000);
+server.listen(port);
