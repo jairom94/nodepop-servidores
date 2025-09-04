@@ -52,7 +52,8 @@ export async function loginJWT(req,res,next) {
             next(createHttpError(401,'Invalid credentials'))
             return
         }
-        jwt.sign({user_id:user.id},process.env.JWT_SECRET,{
+        const jwtSecret = process.env.JWT_SECRET || 'secret-jwt'
+        jwt.sign({user_id:user.id},jwtSecret,{
             expiresIn:'2d'
         },(err,tokenJWT)=>{
             if(err) return next(err)
