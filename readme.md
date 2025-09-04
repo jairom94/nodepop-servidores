@@ -1,4 +1,57 @@
-# 🛍️ NodePop Web
+# 🚀 Nodepop Project Showcase
+
+¡Bienvenido al universo de **Nodepop**! Este repositorio contiene dos versiones de la aplicación: una clásica con Node.js y otra moderna con React. Ambas están desplegadas y listas para explorar.
+
+---
+
+## 🌐 Enlaces en producción
+
+| Proyecto         | Descripción                                      | Enlace de acceso                                  |
+|------------------|--------------------------------------------------|---------------------------------------------------|
+| 🟢 Nodepop API   | Backend con Node.js + Express + MongoDB          | 👉 [kc-jairo.duckdns.org](https://kc-jairo.duckdns.org) |
+| 🔵 Nodepop React | Frontend moderno con React + Axios + Hooks       | 👉 [35.174.228.249](http://35.174.228.249)         |
+
+---
+
+## 📦 Tecnologías utilizadas
+
+- **Node.js**, **Express**, **MongoDB**
+- **React**, **Vite**, **Axios**
+- **Nginx**, **Certbot**, **Ubuntu Server**
+- Despliegue automatizado y configuración multi-site HTTPS
+
+---
+
+## 🛠️ ¿Qué puedes hacer?
+
+- Consultar anuncios con filtros avanzados
+- Crear, editar y eliminar anuncios
+- Navegar desde una SPA rápida y responsiva
+- Ver cómo se integran backend y frontend en producción
+
+---
+
+## 🧠 Arquitectura pensada para escalar
+
+Este proyecto está diseñado con enfoque en:
+- 🔁 Reusabilidad de componentes
+- 🧪 Validaciones automatizadas
+- 🔐 Seguridad y HTTPS
+- 📁 Versionado y mantenibilidad
+
+---
+
+## ✨ Autor
+
+**Jairo M.**  
+Apasionado por la automatización, el diseño escalable y la experiencia del desarrollador.
+
+---
+
+> 💡 Tip: Si quieres ver cómo se configuró el servidor, revisa los bloques Ngin
+
+
+## 🛍️ NodePop Web
 
 Web interface to manage products for the authenticated user using the NodePop API. It allows you to create, view, and delete products with image uploads and custom tags.
 
@@ -27,18 +80,6 @@ npm install
 
 - email: user1@example.com
 - password: 1234
-
-
- <img src="assets-readme/login.png" width="200" alt="login view">
-
-> Add a product
-
-<img src="assets-readme/add-product.png" width="200" alt="login view">
-
- > To delete a product you must do hover on image product
-
- <img src="assets-readme/delete-product.png" width="200" alt="delete a product">
-
 
  ## 🧾 NodePop API
 
