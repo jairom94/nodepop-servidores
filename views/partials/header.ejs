@@ -70,7 +70,7 @@
              href="/logout">
              <span class="flex justify-center items-center text-md">
               <iconify-icon
-                icon="line-md:close-to-menu-transition"
+                icon="fluent-mdl2:leave-user"
               ></iconify-icon>
             </span>
               <span><%= __('Logout') %></span>
@@ -81,7 +81,7 @@
               href="Login">
               <span class="flex justify-center items-center text-md">
               <iconify-icon
-                icon="line-md:close-to-menu-transition"
+                icon="bxs:user"
               ></iconify-icon>
             </span>
                  <span><%= __('Singup or Login') %></span>
@@ -92,7 +92,7 @@
             href="/products/add">
               <span class="flex justify-center items-center text-md">
               <iconify-icon
-                icon="line-md:close-to-menu-transition"
+                icon="mynaui:cart-solid"
               ></iconify-icon>
             </span>
               <span><%= __('Sell or buy') %></span>
@@ -148,11 +148,11 @@
       <!-- Menu Mobile -->       
       <div class="fixed z-50 right-0 bottom-0 left-0 bg-gray-200 shadow-[0_4px_10px_rgb(0,0,0)] md:hidden">
         <nav>
-          <ul class="flex gap-2 justify-between [&>li]:py-4">
+          <ul class="flex gap-2 justify-between [&>li]:py-4 [&>li]:hover:bg-gray-300 [&>li]:transition-colors [&>li]:duration-300">
             <li class=" flex-1 ">
               <a class="flex flex-col items-center" href="/">
                 <span class="flex justify-center items-center">
-                  <iconify-icon icon="bxs:category"></iconify-icon>
+                  <iconify-icon icon="majesticons:home"></iconify-icon>
                 </span>
                 <span><%= __('Home') %></span>
               </a>
@@ -160,7 +160,7 @@
             <li class=" flex-1">
               <a class="flex flex-col items-center" href="#">
                 <span class="flex justify-center items-center">
-                  <iconify-icon icon="bxs:category"></iconify-icon>
+                  <iconify-icon icon="mdi:book-favorite-outline"></iconify-icon>
                 </span>
                 <span><%= __('Favorites') %></span>
               </a>
@@ -168,7 +168,7 @@
             <li class=" flex-1">
               <a class="flex flex-col items-center" href="/products/add">
                 <span class="flex justify-center items-center">
-                  <iconify-icon icon="bxs:category"></iconify-icon>
+                  <iconify-icon icon="basil:add-solid"></iconify-icon>
                 </span>
                 <span><%= __('Create') %></span>
               </a>
@@ -176,7 +176,7 @@
             <li class=" flex-1">
               <a class="flex flex-col items-center" href="#">
                 <span class="flex justify-center items-center">
-                  <iconify-icon icon="bxs:category"></iconify-icon>
+                  <iconify-icon icon="mdi:email"></iconify-icon>
                 </span>
                 <span><%= __('Mailbox') %></span>
               </a>
@@ -185,14 +185,14 @@
               <% if (session.userID) { %>
                 <a class="flex flex-col items-center" href="/logout">
                 <span class="flex justify-center items-center">
-                  <iconify-icon icon="bxs:category"></iconify-icon>
+                  <iconify-icon icon="fluent-mdl2:leave-user"></iconify-icon>
                 </span>
                 <span><%= __('Logout') %></span>
               </a>
               <% }else{ %>
                 <a class="flex flex-col items-center" href="/login">
                   <span class="flex justify-center items-center">
-                    <iconify-icon icon="bxs:category"></iconify-icon>
+                    <iconify-icon icon="ri:user-fill"></iconify-icon>
                   </span>
                   <span><%= __('Login') %></span>
                 </a>

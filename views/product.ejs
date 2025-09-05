@@ -8,7 +8,7 @@
     <figure class="relative md:col-span-2">
       <img
         class="aspect-video rounded-md object-cover object-center"
-        src="<%= product.image %>"
+        src="<%= product.image.startsWith('http') ? product.image : `/imgs/products/${product.image}` %>"
         alt="<%= product.name %>"
       />
     </figure>
@@ -52,6 +52,7 @@
     </div>    
   </article>
 </main>
+ <%- include('partials/footer.ejs') %>
 </div>
     <!-- <script type="module" src="/js/hero.js"></script> -->
   </body>

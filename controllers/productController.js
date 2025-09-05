@@ -128,7 +128,7 @@ export const addProduct = async (req, res, next) => {
       if(mimeType){
         const buffer = Buffer.from(imageBase64,'base64')
         const fileName = `${Date.now()}image.${mimeType.split('/')[1]}`
-        const filePath = path.join(import.meta.dirname,'..','public','products',fileName)
+        const filePath = path.join(import.meta.dirname,'..','public','imgs','products',fileName)
         await fs.writeFile(filePath,buffer)
         image_ = fileName
         // console.log(fileName);

@@ -13,7 +13,6 @@
     --color-red-700: oklch(50.5% 0.213 27.518);
     --color-red-800: oklch(44.4% 0.177 26.899);
     --color-emerald-200: oklch(90.5% 0.093 164.15);
-    --color-emerald-300: oklch(84.5% 0.143 164.978);
     --color-emerald-400: oklch(76.5% 0.177 163.223);
     --color-emerald-500: oklch(69.6% 0.17 162.48);
     --color-emerald-600: oklch(59.6% 0.145 163.225);
@@ -666,6 +665,9 @@
   }
   .pb-\[82px\] {
     padding-bottom: 82px;
+  }
+  .pb-\[100px\] {
+    padding-bottom: 100px;
   }
   .pl-\[3\.5rem\] {
     padding-left: 3.5rem;
@@ -1337,6 +1339,11 @@
       padding-top: var(--height-header-md);
     }
   }
+  .md\:pb-5 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 5);
+    }
+  }
   .md\:text-5xl {
     @media (width >= 48rem) {
       font-size: var(--text-5xl);
@@ -1434,9 +1441,45 @@
       gap: calc(var(--spacing) * 2);
     }
   }
+  .\[\&\>div\]\:p-2 {
+    &>div {
+      padding: calc(var(--spacing) * 2);
+    }
+  }
+  .\[\&\>div\]\:text-gray-50 {
+    &>div {
+      color: var(--color-gray-50);
+    }
+  }
   .\[\&\>div\:first-child\]\:hidden {
     &>div:first-child {
       display: none;
+    }
+  }
+  .\[\&\>div\>div\]\:flex {
+    &>div>div {
+      display: flex;
+    }
+  }
+  .\[\&\>div\>div\]\:items-center {
+    &>div>div {
+      align-items: center;
+    }
+  }
+  .\[\&\>div\>div\]\:justify-center {
+    &>div>div {
+      justify-content: center;
+    }
+  }
+  .\[\&\>div\>div\]\:text-2xl {
+    &>div>div {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .\[\&\>div\>div\]\:text-gray-50 {
+    &>div>div {
+      color: var(--color-gray-50);
     }
   }
   .\[\&\>div\>input\]\:px-3 {
@@ -1463,6 +1506,28 @@
   .\[\&\>li\]\:py-4 {
     &>li {
       padding-block: calc(var(--spacing) * 4);
+    }
+  }
+  .\[\&\>li\]\:transition-colors {
+    &>li {
+      transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+      transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+      transition-duration: var(--tw-duration, var(--default-transition-duration));
+    }
+  }
+  .\[\&\>li\]\:duration-300 {
+    &>li {
+      --tw-duration: 300ms;
+      transition-duration: 300ms;
+    }
+  }
+  .\[\&\>li\]\:hover\:bg-gray-300 {
+    &>li {
+      &:hover {
+        @media (hover: hover) {
+          background-color: var(--color-gray-300);
+        }
+      }
     }
   }
   .\[\&\>strong\]\:font-bold {

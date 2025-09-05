@@ -61,7 +61,7 @@
             <figure class="relative group overflow-hidden rounded-md">
               <img
                 class="aspect-video w-full rounded-[inherit] object-cover object-center"
-                src="<%= p.image %>"
+                src="<%= p.image.startsWith('http') ? p.image : `/imgs/products/${p.image}` %>"
                 alt="<%= p.name %>"
               />
               <div class="pointer-events-none flex gap-2 justify-center items-center backdrop-blur-xs transition-opacity duration-300 absolute inset-0 opacity-0 bg-gray-500/35 group-hover:opacity-100">
@@ -119,6 +119,7 @@
     </div>
   </section>
 </main>
+ <%- include('partials/footer.ejs') %>
 </div>
     <script type="module" src="/js/actions.js"></script>
     <!-- JS de noUiSlider -->

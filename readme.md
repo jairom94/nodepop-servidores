@@ -96,4 +96,4 @@ NodePop es una API RESTful diseñada para gestionar productos de usuarios autent
 
 Puedes explorar la documentación completa e interactuar con los endpoints desde Swagger UI:
 
-👉 [http://localhost:3000/api-doc/](http://localhost:3000/api-doc/)
+👉 [https://kc-jairo.duckdns.org/api-doc/](https://kc-jairo.duckdns.org/api-doc/api-doc/)
