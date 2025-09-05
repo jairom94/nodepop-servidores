@@ -8,7 +8,7 @@
 
 | Proyecto         | Descripción                                      | Enlace de acceso                                  |
 |------------------|--------------------------------------------------|---------------------------------------------------|
-| 🟢 Nodepop Web   | Backend con Node.js + Express + MongoDB          | 👉 [kc-jairo.duckdns.org](https://kc-jairo.duckdns.org)[nodepop.kc-jairo.duckdns.org](https://nodepop.kc-jairo.duckdns.org) |
+| 🟢 Nodepop Web   | Backend con Node.js + Express + MongoDB          | 👉 [kc-jairo.duckdns.org](https://kc-jairo.duckdns.org)👉[nodepop.kc-jairo.duckdns.org](https://nodepop.kc-jairo.duckdns.org) |
 | 🔵 Nodepop React | Frontend moderno con React + Axios + Hooks       | 👉 [35.174.228.249](http://35.174.228.249)         |
 
 ---
